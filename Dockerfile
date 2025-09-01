@@ -4,7 +4,7 @@ FROM ruby:2.6.6
 RUN apt-get update
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash # Installs the node repository
 RUN apt-get install --yes nodejs # Actually install NODEJS
-RUN apt-get install fonts-ipafont-gothic
+RUN apt-get install -y fonts-ipafont-gothic
 
 RUN mkdir /app
 
